@@ -1,0 +1,9 @@
+name: revivebook
+version: 1.0.0
+author: nickdev
+main: com.nickdev.revivebook.Plugin
+api-version: 1.16
+commands:
+  givebook:
+    description: Gives the revivebook to the player
+    usage: /<command>
