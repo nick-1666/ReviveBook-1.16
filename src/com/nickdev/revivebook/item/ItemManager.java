@@ -11,7 +11,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ItemManager {
-
     public  static ItemStack reviveBook;
 
     public static void init() {
@@ -21,7 +20,7 @@ public class ItemManager {
     public static void createReviveBook() {
         ItemStack item = new ItemStack(Material.WRITABLE_BOOK);
         ItemMeta meta = item.getItemMeta();
-
+        meta.setCustomModelData(6942069); //for you texturepack nerds
         meta.setDisplayName("§a§lRevive Book");
 
         List<String> lore = new ArrayList<>();
@@ -46,6 +45,7 @@ public class ItemManager {
         recipe.setIngredient('N', Material.NETHER_STAR);
 
         Bukkit.getServer().addRecipe(recipe);
+
     }
 
 }
